@@ -1,12 +1,60 @@
+.title{
+    
+    text-align: center;
+}
+.about{
+    margin-bottom: 3rem;
+}
 .container{
-    border: 2px solid greenyellow !important;
+    /* border: 2px solid greenyellow !important; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     gap: 2rem;
+    justify-content: space-around;
     
+    background-color: whitesmoke;
 }
 .box{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    /* background-color: white; */
+    box-shadow: 1px 1px 50px 25px  rgb(220, 183, 183);
+   color: black !important;
+   /* rgba(255, 192, 203, 0.954) */
+   margin: 1rem;
     /* gap: 2rem; */
 }
+a{
+    color:rgba(255, 192, 203, 0.954) !important
+}
+a:hover{
+    color : greenyellow !important;
+}
+
+
+@keyframes linktag {
+    from {font-size: small; } 
+    to {background-color: rgb(226, 248, 237); }
+}
+/* background-color: rgb(252, 227, 227); */
+ h4{
+    /* background-color: red; */
+    animation-name: linktag;
+    animation-duration: 5s;
+    animation-iteration-count: 50;
+  }
+
+  @keyframes a {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+  
+  /* The element to apply the animation to */
+  #about{
+   
+   color: whitesmoke;
+    animation-name: a;
+    animation-duration: 4s;
+    animation-iteration-count: 50
+  }
